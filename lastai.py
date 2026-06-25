@@ -2,7 +2,7 @@ import requests
 import torch
 import torch.nn as nn
 JINA_API_KEY="your_jina_api_key_here"
-URL="http://localhost:8080/api/v1/db/data/v1/pftjft4txscifxd/m24mnqwwkissrsh"
+URL="server URL
 TOKEN="your_token_here"
 HEADERS = {"xc-token": "your_token_here"}
 limit=1000
