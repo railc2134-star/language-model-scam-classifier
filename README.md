@@ -1,99 +1,84 @@
-wrtie the readme
-ScamGuard-AI
+# ScamGuardAI
 
-A multi-domain machine learning project exploring transformer models, reinforcement learning agents, time-series forecasting, and real-time NLP systems.
+ScamGuardAI is a multi-domain machine learning project focused on experimenting with deep learning models across NLP, reinforcement learning, time-series forecasting, and real-time applications.
 
-This repository is a collection of experiments built to study how different AI approaches behave across text understanding, decision making, and sequential prediction tasks.
+The repository contains multiple independent AI systems built for research and learning purposes, including scam detection, transformer models, RL agents, and Discord bots.
 
-Overview
+---
 
-ScamGuard-AI combines several independent systems:
+## What this project includes
 
-NLP classification models for scam detection
-BERT-based transformers for text understanding
-Cross-attention encoder-decoder architecture for question answering
-Reinforcement learning agents for classic control environments
-Financial time-series prediction models for cryptocurrency forecasting
-Discord bots integrating trained models for real-time inference
-NLP and Scam Detection
+- Scam detection models for Discord and chat messages using BERT and embedding-based networks  
+- Transformer and cross-attention models for question answering tasks  
+- Reinforcement learning agents (DQN, SAC, Actor-Critic) for Gymnasium environments  
+- Time-series prediction models for cryptocurrency price forecasting  
+- Discord bots using trained models for real-time inference and automation  
 
-This section focuses on identifying malicious or phishing-style messages using multiple approaches:
+---
 
-Word-level and embedding-based classifiers
-BERT fine-tuning for multilingual text classification
-Jina embedding-based neural classifier
-Dataset aggregation from multiple Discord scam sources
+## NLP / Scam Detection
 
-Goal: detect scam patterns in real-time chat messages with high confidence models.
+- Detects phishing and scam messages  
+- Uses BERT-based classifiers and embedding models  
+- Trained on multiple Discord scam datasets  
+- Real-time inference via Discord bot integration  
 
-Transformer and Cross-Attention Models
+---
 
-Includes sequence-to-sequence architectures built for:
+## Transformer Models
 
-Question answering tasks (SQuAD-based training)
-Encoder-decoder systems using BERT embeddings
-Cross-attention between question and context representations
+- Encoder-decoder architectures  
+- Cross-attention based question answering model  
+- BERT-based embeddings for context understanding  
+- Experiments on sequence-to-sequence learning  
 
-Goal: study how cross-attention improves contextual reasoning over standard transformers.
+---
 
-Reinforcement Learning
+## Reinforcement Learning
 
-Multiple RL algorithms implemented and tested in Gymnasium environments:
+- DQN implementation for CartPole  
+- SAC and Actor-Critic implementations for continuous control  
+- Experiments on Pendulum and MuJoCo environments (Ant)  
 
-DQN for discrete control tasks (CartPole)
-SAC-style continuous control agents
-Actor-Critic and PPO-like training loops
-Experiments on Pendulum and MuJoCo environments (Ant, etc.)
+---
 
-Goal: compare stability and performance of different RL strategies in continuous vs discrete environments.
+## Time Series Prediction
 
-Time Series Prediction
+- LSTM-based Bitcoin price prediction model  
+- Transformer-based forecasting model  
+- Sliding window training on historical price data  
 
-Models trained on financial data (Bitcoin historical prices):
+---
 
-LSTM-based sequence prediction model
-Transformer-based forecasting model
-Sliding window normalization and prediction pipeline
+## Discord Bots
 
-Goal: predict next-step price movement using historical patterns.
+- Scam detection bot for live message classification  
+- Game management bot with team balancing system  
+- Integration with trained PyTorch models for inference  
 
-Discord Bots
+---
 
-Real-time applications built using trained models:
+## Requirements
 
-Scam detection bot that classifies incoming messages
-Game management bot that handles teams and matchmaking
-Live inference using trained PyTorch models
+- Python 3.10+
+- PyTorch
+- Transformers
+- Gymnasium
+- Datasets
+- Discord.py  
 
-Goal: deploy ML models into interactive environments.
+---
 
-Key Concepts Used
-Transformers and self-attention
-Cross-attention architectures
-BERT embeddings
-Deep reinforcement learning (DQN, SAC, Actor-Critic)
-Sequence modeling
-Supervised classification on noisy real-world datasets
-Real-time inference systems
-Important Notes
+## Notes
 
-This is an experimental research repository.
+This is an experimental research project. Models are trained on mixed datasets and are intended for learning and experimentation, not production use.
 
-Some models are trained on mixed-quality datasets and are intended for learning and experimentation rather than production use.
+---
 
-Performance may vary depending on dataset quality and training configuration.
+## Future Improvements
 
-Future Improvements
-unify all NLP models under a single transformer framework
-stabilize reinforcement learning training (PPO/SAC tuning improvements)
-add experiment tracking and logging system
-improve dataset cleaning and labeling consistency
-convert scripts into modular training pipelines
-build unified inference API for all models
-Requirements
-Python 3.10+
-PyTorch
-Transformers
-Gymnasium
-Datasets
-Discord.py
+- unify all models into a single framework  
+- improve reinforcement learning stability  
+- add experiment tracking and logging  
+- optimize dataset pipelines  
+- build a unified inference API  
