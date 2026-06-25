@@ -1,14 +1,30 @@
-# Language Model Scam Classifier
-
-This project uses a language model to classify scam messages. It utilizes the JINA API for embeddings and PyTorch for model training. The project consists of a data scraper, a model trainer, and a predictor.
-
-## Technologies Used
-* JINA API
-* PyTorch
-* requests
-* torch
-
-## How to Run
-1. Install the required libraries by running `pip install -r requirements.txt`.
-2. Replace the placeholders in the code with your actual API keys and tokens.
-3. Run the script using `python lastai.py`.
+ScamGuard-AI/
+│
+├── nlp/
+│   ├── bert_scam_classifier.py
+│   ├── embedding_model.py
+│   ├── dataset_builder.py
+│
+├── rl/
+│   ├── sac_pendulum.py
+│   ├── dqn_cartpole.py
+│   ├── sac_ant.py
+│
+├── time_series/
+│   ├── btc_lstm.py
+│   ├── btc_transformer.py
+│
+├── bots/
+│   ├── discord_scam_bot.py
+│   ├── discord_game_bot.py
+│
+├── cross_attention/
+│   ├── squad_model.py
+│
+├── data/
+│   ├── preprocessing_scripts/
+│
+├── models/
+│   ├── saved_weights/
+│
+└── README.md
